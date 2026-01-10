@@ -13,11 +13,11 @@ Wildwood InfoSec delivers thorough, expert penetration testing to safeguard your
 
 ---
 
-## Experience Robust Security and Trusted Expertise 
+## Experience Robust Security and Trusted Expertise :contentReference[oaicite:6]{index=2}
 
 Wildwood InfoSec delivers thorough penetration testing to safeguard your digital assets with precision and reliability. :contentReference[oaicite:3]{index=3}
 
-### Comprehensive Penetration Testing 
+### Comprehensive Penetration Testing :contentReference[oaicite:6]{index=4}
 
 Our methodical approach uncovers vulnerabilities across web, cloud, and network systems, ensuring proactive risk mitigation. :contentReference[oaicite:5]{index=5}
 
