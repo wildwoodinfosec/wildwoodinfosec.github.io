@@ -5,3 +5,15 @@ remote_theme: daattali/beautiful-jekyll@6.0.1
 
 plugins:
   - jekyll-remote-theme
+navbar-links:
+  Services: /services
+  About: /about
+  Contact: /contact
+
+author:
+  name: Wildwood InfoSec
+  email: contact@wildwoodinfosec.com
+
+social-network-links:
+  github: wildwoodinfosec
+  linkedin: wildwoodinfosec
