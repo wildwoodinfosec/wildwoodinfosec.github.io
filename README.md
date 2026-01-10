@@ -1,6 +1,6 @@
 # wildwoodinfosec.github.io
 ---
-layout: home
+layout: page
 title: Wildwood InfoSec
 subtitle: Penetration Testing That Fortifies Your Digital Defenses
 ---
