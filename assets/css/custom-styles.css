@@ -1,6 +1,12 @@
-/* Increase navbar logo size */
+/* Make navbar logo bigger */
+.navbar-brand {
+  height: auto !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
 .navbar-brand img {
-  max-height: 56px !important;   /* default is ~30px */
-  height: 56px !important;
+  height: 64px !important;   /* try 56–80 */
+  max-height: 64px !important;
   width: auto !important;
 }
