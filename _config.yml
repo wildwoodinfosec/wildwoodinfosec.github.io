@@ -2,6 +2,7 @@
 title: Wildwood InfoSec
 description: Offensive security, red teaming, and adversary simulation
 url: "https://preview.wildwoodinfosec.com"
+title-img: /assets/img/logo.png
 baseurl: ""
 
 remote_theme: daattali/beautiful-jekyll@6.0.1
