@@ -5,7 +5,7 @@ url: "https://preview.wildwoodinfosec.com"
 title-img: /assets/img/logo.png
 baseurl: ""
 custom-css:
-  - /assets/css/custom.css
+  - /assets/css/custom.css 
 
 
 remote_theme: daattali/beautiful-jekyll@6.0.1
