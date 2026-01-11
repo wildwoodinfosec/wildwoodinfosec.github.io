@@ -54,9 +54,9 @@ header.header-section.has-img .intro-header.no-img {
 /* Primary button */
 .btn-primary,
 a.btn-primary {
-  background-color: #0b3c5d;
-  border-color: #0b3c5d;
-  color: #123524;
+  background-color: #123524;
+  border-color: #123524;
+  color: #FFFFFF;
 }
 
 .btn-primary:hover,
@@ -65,23 +65,23 @@ a.btn-primary {
 a.btn-primary:hover,
 a.btn-primary:focus,
 a.btn-primary:active {
-  background-color: #092f49;
-  border-color: #092f49;
-  color: #123524;
+  background-color: #123524;
+  border-color: #123524;
+  color: #FFFFFF;
 }
 
 /* Outline primary button (if you use it) */
 .btn-outline-primary,
 a.btn-outline-primary {
-  color: #0b3c5d;
-  border-color: #0b3c5d;
+  color: #123524;
+  border-color: #123524;
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
 a.btn-outline-primary:hover,
 a.btn-outline-primary:focus {
-  background-color: #0b3c5d;
-  border-color: #0b3c5d;
-  color: #123524;
+  background-color: #123524;
+  border-color: #123524;
+  color: #FFFFFF;
 }
