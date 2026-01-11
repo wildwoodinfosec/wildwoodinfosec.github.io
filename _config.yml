@@ -7,6 +7,9 @@ baseurl: ""
 site-css:
   - "/assets/css/custom-styles.css"
 
+site-css:
+  - "/assets/css/custom-stylesv2.css"
+
 
 
 remote_theme: daattali/beautiful-jekyll@6.0.1
