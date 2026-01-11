@@ -55,3 +55,28 @@ nav.navbar .navbar-nav > li > a {
   display: flex !important;
   align-items: center !important;
 }
+
+/* === Remove gap between navbar and hero === */
+
+/* Navbar should not create spacing below itself */
+.navbar,
+nav.navbar {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Hero/header should start immediately after navbar */
+.intro-header,
+header.intro-header {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Specifically for hero image header variant */
+.intro-header.big-img,
+header.intro-header.big-img {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
