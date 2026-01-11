@@ -1,19 +1,33 @@
 
 title: Wildwood InfoSec
 description: Offensive security, red teaming, and adversary simulation
+url: "https://preview.wildwoodinfosec.com"
+baseurl: ""
+
 remote_theme: daattali/beautiful-jekyll@6.0.1
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Top navigation
 navbar-links:
   Services: /services
   About: /about
   Contact: /contact
 
+# Footer / identity
 author:
   name: Wildwood InfoSec
-  email: contact@wildwoodinfosec.com
 
 social-network-links:
   github: wildwoodinfosec
-  linkedin: wildwoodinfosec
+
+# Optional: reduce “bloggy” feel if you are not using posts yet
+# (You can remove these later if you start blogging.)
+exclude:
+  - README.md
+
+
+
