@@ -1,38 +1,29 @@
-/* --- Tight navbar with large logo (Beautiful-Jekyll / Bootstrap) --- */
-
-/* Remove extra vertical whitespace in the navbar */
+/* Responsive navbar logo (scales with viewport) */
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-  min-height: 0 !important;
 }
 
-/* Tighten the container inside the navbar (Bootstrap) */
 .navbar .container,
 .navbar .container-fluid {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* Tighten the brand area */
+/* Keep brand area tight */
 .navbar-brand {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  height: auto !important;
   line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
-/* Size the logo */
+/* The key: responsive logo height */
 .navbar-brand img {
-  height: 64px !important;      /* try 56 if you want it tighter */
+  height: auto !important;
   width: auto !important;
-  max-height: none !important;
-}
 
-/* Tighten the nav links so they don't force a tall bar */
-.navbar-nav > li > a {
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
-  line-height: 1 !important;
+  /* scales with viewport: min 34px, fluid ~6vw, max 64px */
+  max-height: clamp(34px, 6vw, 64px) !important;
 }
