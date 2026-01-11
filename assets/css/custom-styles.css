@@ -1,20 +1,6 @@
-/* Increase hero logo size in Beautiful-Jekyll */
-.intro-header .big-title-img {
-  max-width: 700px !important;
-  width: 90vw !important;
-}
-
-.intro-header .big-title-img img {
-  max-width: 100% !important;
-  width: 100% !important;
-  height: auto !important;
-}
-/* HERO logo size: target only images inside the hero header (not the navbar) */
-.intro-header.big-img .page-heading img {
-  width: min(650px, 90vw) !important;
-  max-width: 650px !important;
-  height: auto !important;
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+/* Increase navbar logo size */
+.navbar-brand img {
+  max-height: 56px !important;   /* default is ~30px */
+  height: 56px !important;
+  width: auto !important;
 }
