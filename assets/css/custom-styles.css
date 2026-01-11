@@ -1,82 +1,40 @@
-/* === Responsive navbar + logo, no extra gap === */
+/* === Align hero with fixed navbar (remove visible gap) === */
 
-/* 1) Define responsive sizes once */
 :root {
-  /* overall navbar height (controls the gap / layout) */
-  --nav-h: clamp(52px, 6vw, 72px);
-
-  /* logo height inside the navbar */
-  --logo-h: clamp(34px, 4.5vw, 58px);
+  /* Adjust this once. Must be >= your logo height + a little breathing room */
+  --nav-h: 72px;
 }
 
-/* 2) If theme uses a fixed-top navbar, the body gets padding-top.
-      Keep it aligned to the *actual* navbar height to eliminate the gap. */
-body {
-  padding-top: var(--nav-h) !important;
-}
-
-/* 3) Tighten navbar chrome and force height */
-nav.navbar,
-nav.navbar.navbar-fixed-top {
+/* Keep navbar at a predictable height */
+nav.navbar.fixed-top {
+  height: var(--nav-h) !important;
   min-height: var(--nav-h) !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* 4) Remove extra container padding that can create a “fat” bar */
-nav.navbar .container,
-nav.navbar .container-fluid {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* 5) Brand box: make it exactly nav height and center contents */
-nav.navbar .navbar-brand {
+/* Center brand/logo vertically in the navbar */
+nav.navbar.fixed-top .navbar-brand {
   height: var(--nav-h) !important;
   display: flex !important;
   align-items: center !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  line-height: 1 !important;
 }
 
-/* 6) The actual logo image: responsive height */
-nav.navbar .navbar-brand img {
-  height: var(--logo-h) !important;
+/* Size the navbar logo */
+nav.navbar.fixed-top .navbar-brand img {
+  height: 56px !important;   /* your logo size */
   width: auto !important;
-  max-height: none !important;
 }
 
-/* 7) Nav links: reduce vertical padding so they don’t force the bar taller */
-nav.navbar .navbar-nav > li > a {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  height: var(--nav-h) !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* === Remove gap between navbar and hero === */
-
-/* Navbar should not create spacing below itself */
-.navbar,
-nav.navbar {
-  margin-bottom: 0 !important;
-  border-bottom: 0 !important;
-  box-shadow: none !important;
-}
-
-/* Hero/header should start immediately after navbar */
-.intro-header,
-header.intro-header {
+/* This is the key: pull the hero up to sit flush under the fixed navbar */
+header.header-section.has-img {
+  padding-top: var(--nav-h) !important;
   margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
-/* Specifically for hero image header variant */
-.intro-header.big-img,
-header.intro-header.big-img {
+/* Remove any extra spacing the theme may add to the hero wrapper */
+header.header-section.has-img .intro-header {
   margin-top: 0 !important;
-  padding-top: 0 !important;
 }
-
