@@ -1,40 +1,50 @@
-/* === Align hero with fixed navbar (remove visible gap) === */
+/* === Fix white gap between fixed navbar and hero image === */
 
+/* 1) Single source of truth for navbar height */
 :root {
-  /* Adjust this once. Must be >= your logo height + a little breathing room */
-  --nav-h: 72px;
+  --nav-h: 72px;   /* set to what you want the navbar to occupy */
 }
 
-/* Keep navbar at a predictable height */
+/* 2) Make the fixed navbar actually match that height */
 nav.navbar.fixed-top {
-  height: var(--nav-h) !important;
   min-height: var(--nav-h) !important;
+  height: var(--nav-h) !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* Center brand/logo vertically in the navbar */
+/* Center logo vertically and size it */
 nav.navbar.fixed-top .navbar-brand {
   height: var(--nav-h) !important;
   display: flex !important;
   align-items: center !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  line-height: 1 !important;
 }
 
-/* Size the navbar logo */
 nav.navbar.fixed-top .navbar-brand img {
   height: 56px !important;   /* your logo size */
   width: auto !important;
 }
 
-/* This is the key: pull the hero up to sit flush under the fixed navbar */
-header.header-section.has-img {
+/* 3) CRITICAL: align the page offset with the fixed navbar height */
+body {
   padding-top: var(--nav-h) !important;
-  margin-top: 0 !important;
 }
 
-/* Remove any extra spacing the theme may add to the hero wrapper */
+/* 4) Remove any extra spacing above the hero */
+header.header-section.has-img {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 header.header-section.has-img .intro-header {
   margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* 5) CRITICAL: hide the duplicate "no-img" header so it can't create a white band */
+header.header-section.has-img .intro-header.no-img {
+  display: none !important;
 }
