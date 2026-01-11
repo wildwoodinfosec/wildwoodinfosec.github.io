@@ -1,21 +1,29 @@
-/* --- NAVBAR LOGO: large logo, tight navbar --- */
+/* --- NAVBAR: make it tight but allow a large logo --- */
 
-nav.navbar {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
+/* Remove padding from the navbar container */
+.navbar .container,
+.navbar .container-fluid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
-/* Allow logo to be tall */
-nav.navbar .navbar-brand {
+/* Tighten the navbar itself */
+.navbar {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  min-height: 0 !important;
+}
+
+/* Remove vertical padding around the brand */
+.navbar-brand {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   line-height: 1 !important;
 }
 
-/* Size the logo */
-nav.navbar .navbar-brand img,
-nav.navbar img[alt="Wildwood InfoSec Logo"] {
-  height: 64px !important;   /* adjust to taste */
+/* Make the logo bigger */
+.navbar-brand img {
+  height: 64px !important;     /* change to taste */
   max-height: none !important;
   width: auto !important;
 }
