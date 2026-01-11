@@ -1,7 +1,11 @@
-/* Increase the hero banner logo size (big-title-img) */
-.big-title-img,
-.big-title-img img {
-  width: min(650px, 85vw) !important;   /* responsive */
-  max-width: 650px !important;
+/* Increase hero logo size in Beautiful-Jekyll */
+.intro-header .big-title-img {
+  max-width: 700px !important;
+  width: 90vw !important;
+}
+
+.intro-header .big-title-img img {
+  max-width: 100% !important;
+  width: 100% !important;
   height: auto !important;
 }
