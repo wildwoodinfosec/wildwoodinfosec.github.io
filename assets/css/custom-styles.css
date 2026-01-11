@@ -1,12 +1,21 @@
-/* Make navbar logo bigger */
-.navbar-brand {
-  height: auto !important;
-  padding-top: 8px !important;
-  padding-bottom: 8px !important;
+/* --- NAVBAR LOGO: large logo, tight navbar --- */
+
+nav.navbar {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
 }
 
-.navbar-brand img {
-  height: 64px !important;   /* try 56–80 */
-  max-height: 64px !important;
+/* Allow logo to be tall */
+nav.navbar .navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1 !important;
+}
+
+/* Size the logo */
+nav.navbar .navbar-brand img,
+nav.navbar img[alt="Wildwood InfoSec Logo"] {
+  height: 64px !important;   /* adjust to taste */
+  max-height: none !important;
   width: auto !important;
 }
