@@ -2,7 +2,8 @@
 layout: page
 title: Wildwood InfoSec
 subtitle: Penetration Testing That Fortifies Your Digital Defenses
-bigimg: /assets/img/555.png
+bigimg:
+  - "/assets/img/555.png"
 ---
 
 ## Experience Robust Security and Trusted Expertise
