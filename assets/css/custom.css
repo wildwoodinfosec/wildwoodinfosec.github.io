@@ -1,5 +1,5 @@
 /* Make the hero logo (big-title-img) larger */
 .big-title-img img {
-  max-width: 420px;     /* default ~300px */
+  max-width: 500px;     /* default ~300px */
   width: 80vw;         /* responsive scaling */
 }
