@@ -18,8 +18,7 @@ navbar-links:
   Contact: /contact
 
 # Footer / identity
-author:
-  name: Wildwood InfoSec
+author: Wildwood InfoSec
 
 social-network-links:
   github: wildwoodinfosec
