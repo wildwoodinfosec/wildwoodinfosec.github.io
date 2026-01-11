@@ -1,7 +1,7 @@
 /* Increase the hero banner logo size (big-title-img) */
 .big-title-img,
 .big-title-img img {
-  width: min(520px, 85vw) !important;   /* responsive */
-  max-width: 520px !important;
+  width: min(650px, 85vw) !important;   /* responsive */
+  max-width: 650px !important;
   height: auto !important;
 }
